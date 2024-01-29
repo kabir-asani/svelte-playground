@@ -2,6 +2,6 @@
 	import '../app.css';
 </script>
 
-<div class="relative container mx-auto mt-12 md:mt-40">
+<div class="mx-4 md:mx-12 lg:mx-auto lg:max-w-3xl">
 	<slot />
 </div>
