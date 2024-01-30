@@ -15,12 +15,14 @@ export default {
 		themes: [
 			{
 				chaos: {
-					primary: '#141414',
+					primary: '#2797FE',
 					'primary-content': '#fff',
-					secondary: '#171717',
-					accent: '#453F9A',
+					secondary: '#A971FF',
+					'secondary-content': '#fff',
+					accent: '#43B9B9',
+					'accent-content': '#fff',
 					neutral: '#9C9C9C',
-					'base-100': '#000',
+					'base-100': '#141414',
 					'base-content': '#fff'
 				}
 			}
