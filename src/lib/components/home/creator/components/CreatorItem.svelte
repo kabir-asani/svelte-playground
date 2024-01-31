@@ -1,7 +1,6 @@
 <script lang="ts">
 	export let text: String;
 	export let tag: String;
-	export let image: String;
 	export let url: String;
 
 	import Clickable from '$lib/components/shared/clickable/Clickable.svelte';
@@ -15,5 +14,7 @@
 		<div class="text-neutral">{tag}</div>
 	</div>
 	<div class="grow border-b border-neutral opacity-20" />
-	<img src={image.valueOf()} alt="" class="h-6 w-6" />
+	<div class="h-5 w-5 fill-base-content">
+		<slot />
+	</div>
 </div>

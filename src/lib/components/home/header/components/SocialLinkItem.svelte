@@ -1,5 +1,4 @@
 <script lang="ts">
-	export let image: String;
 	export let text: String;
 	export let url: String;
 
@@ -8,7 +7,9 @@
 
 <Clickable href={url.valueOf()}>
 	<div class="flex flex-row items-center gap-2">
-		<img src={image.valueOf()} alt={text.valueOf()} class="h-5 w-5" />
+		<div class="h-54 w-5 fill-base-content">
+			<slot />
+		</div>
 		{text}
 	</div>
 </Clickable>

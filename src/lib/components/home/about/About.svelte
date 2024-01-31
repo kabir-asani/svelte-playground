@@ -4,7 +4,7 @@
 </script>
 
 <SectionItem title="About" id="about">
-	<SectionColumnBody properties="font-light">
+	<SectionColumnBody>
 		<p>I'm Kabir Asani. I'm an entrepreneur, developer, content creator, and experimentalist.</p>
 
 		<p>

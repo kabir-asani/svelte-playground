@@ -1,10 +1,14 @@
 <script>
 	import HighlightItem from './components/HighlightItem.svelte';
 	import SocialLinkItem from './components/SocialLinkItem.svelte';
+	import XIcon from '$lib/assets/svg/XIcon.svelte';
+	import InstagramIcon from '$lib/assets/svg/InstagramIcon.svelte';
+	import RedditIcon from '$lib/assets/svg/RedditIcon.svelte';
+	import GitHubIcon from '$lib/assets/svg/GitHubIcon.svelte';
 </script>
 
 <div class="flex flex-col md:flex-row gap-4 items-stretch md:items-center">
-	<div class="avatar self-center w-36">
+	<div class="avatar self-center md:w-36">
 		<div class="w-32 rounded-full">
 			<img src="/images/jpgs/profile-picture.jpg" alt="Kabir Asani's close up shot" />
 		</div>
@@ -24,29 +28,21 @@
 		<div
 			class="flex flex-wrap md:flex-row gap-4 font-medium items-center justify-center md:justify-normal"
 		>
-			<SocialLinkItem
-				image="/images/svgs/github.svg"
-				text="GitHub"
-				url="https://github.com/kabir-asani"
-			/>
+			<SocialLinkItem text="GitHub" url="https://github.com/kabir-asani">
+				<GitHubIcon />
+			</SocialLinkItem>
 
-			<SocialLinkItem
-				image="/images/svgs/x.svg"
-				text="X / Twitter"
-				url="https://x.com/KabirAsani"
-			/>
+			<SocialLinkItem text="X / Twitter" url="https://x.com/KabirAsani">
+				<XIcon />
+			</SocialLinkItem>
 
-			<SocialLinkItem
-				image="/images/svgs/instagram.svg"
-				text="Instagram"
-				url="https://instagram.com/kabir.asani"
-			/>
+			<SocialLinkItem text="Instagram" url="https://instagram.com/kabir.asani">
+				<InstagramIcon />
+			</SocialLinkItem>
 
-			<SocialLinkItem
-				image="/images/svgs/reddit.svg"
-				text="Reddit"
-				url="https://reddit.com/u/kabirasani"
-			/>
+			<SocialLinkItem text="Reddit" url="https://reddit.com/u/kabirasani">
+				<RedditIcon />
+			</SocialLinkItem>
 		</div>
 	</div>
 </div>

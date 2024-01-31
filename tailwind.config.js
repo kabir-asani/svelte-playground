@@ -27,6 +27,17 @@ export default {
 					'base-300': '#161B22',
 					'base-content': '#fff'
 				}
+			},
+			{
+				light: {
+					...require('daisyui/src/theming/themes')['light'],
+					primary: '#2797FE',
+					'primary-content': '#fff',
+					secondary: '#A971FF',
+					'secondary-content': '#fff',
+					accent: '#43B9B9',
+					'accent-content': '#fff'
+				}
 			}
 		]
 	}
