@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import SectionItem from '$lib/components/shared/section/section-item/SectionItem.svelte';
 	import SectionColumnBody from '$lib/components/shared/section/section-body/SectionColumnBody.svelte';
 </script>

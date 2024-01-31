@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { writable } from 'svelte/store';
+	import CopyAfterIcon from '$lib/assets/svg/CopyAfterIcon.svelte';
+	import CopyBeforeIcon from '$lib/assets/svg/CopyBeforeIcon.svelte';
 
 	export let text: String;
 
@@ -24,10 +26,10 @@
 	<dev class="flex flex-row gap-1 items-center text-sm text-neutral">
 		{#if $copied}
 			Copied
-			<img src="/images/pngs/clipboard-tick.png" alt="Clipboard Ticked" class="h-4 w-4" />
+			<CopyAfterIcon class="h-4 w-4 fill-neutral" />
 		{:else}
 			Copy
-			<img src="/images/pngs/clipboard.png" alt="Clipboard" class="h-4 w-4" />
+			<CopyBeforeIcon class="h-4 w-4 fill-neutral" />
 		{/if}
 	</dev>
 </div>

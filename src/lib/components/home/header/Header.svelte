@@ -10,7 +10,7 @@
 <div class="flex flex-col md:flex-row gap-4 items-stretch md:items-center">
 	<div class="avatar self-center md:w-36">
 		<div class="w-32 rounded-full">
-			<img src="/images/jpgs/profile-picture.jpg" alt="Kabir Asani's close up shot" />
+			<img src="/images/profile-picture.jpg" alt="Kabir Asani's close up shot" />
 		</div>
 	</div>
 
