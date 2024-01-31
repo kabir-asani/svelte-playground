@@ -9,19 +9,17 @@
 		dateStyle: 'long'
 	});
 
-	import Clickable from '$lib/components/shared/clickable/Clickable.svelte';
+	import Copy from '$lib/components/shared/copy/Copy.svelte';
+	import SectionColumnBody from '$lib/components/shared/section/section-body/SectionColumnBody.svelte';
+	import SectionItem from '$lib/components/shared/section/section-item/SectionItem.svelte';
 </script>
 
-<div class="flex flex-col md:flex-row gap-4 mb-40">
-	<div>
-		<p class="md:w-36 font-medium sticky top-10">Contact</p>
-	</div>
-
-	<div class="flex flex-col gap-4">
+<SectionItem title="Contact" id="contact">
+	<SectionColumnBody>
 		<p class="text-neutral">{currentTime} • {currentDate} IST</p>
-
-		<Clickable href="mailto:iamkabirasani@gmail.com">
+		<div class="flex flex-row items-center gap-2">
 			<p class="link text-neutral">iamkabirasani@gmail.com</p>
-		</Clickable>
-	</div>
-</div>
+			<Copy text="iamkabirasani@gmail.com" />
+		</div>
+	</SectionColumnBody>
+</SectionItem>

@@ -1,18 +1,22 @@
 <script>
 	import ShowcaseItem from './components/ShowcaseItem.svelte';
-	import Clickable from '$lib/components/shared/clickable/Clickable.svelte';
+	import SectionItem from '$lib/components/shared/section/section-item/SectionItem.svelte';
 </script>
 
-<div class="flex flex-col md:flex-row gap-4">
-	<div>
-		<p class="md:w-36 font-medium sticky top-10">Projects</p>
-	</div>
+<SectionItem title="Projects" id="projects">
 	<div class="grow flex flex-col md:grid md:grid-cols-2 md:grid-flow-row gap-4">
+		<ShowcaseItem
+			emoji="🚀"
+			name="Gravity"
+			onelineDescription="Project Gravity"
+			highlight={true}
+			url="https://github.com/kabir-asani/gravity"
+		/>
+
 		<ShowcaseItem
 			emoji="😇"
 			name="Svelte"
 			onelineDescription="Svelte Playground"
-			highlight={true}
 			url="https://github.com/kabir-asani/svelte-playground"
 		/>
 
@@ -23,4 +27,4 @@
 			url="https://github.com/kabir-asani/kabir-asani"
 		/>
 	</div>
-</div>
+</SectionItem>

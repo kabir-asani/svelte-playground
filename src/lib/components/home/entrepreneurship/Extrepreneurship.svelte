@@ -1,12 +1,11 @@
 <script>
+	import SectionColumnBody from '$lib/components/shared/section/section-body/SectionColumnBody.svelte';
+	import SectionItem from '$lib/components/shared/section/section-item/SectionItem.svelte';
 	import EntrepreneurshipItem from './components/EntrepreneurshipItem.svelte';
 </script>
 
-<div class="flex flex-col md:flex-row gap-4">
-	<div>
-		<p class="md:w-36 font-medium sticky top-10">Entrepreneur</p>
-	</div>
-	<div class="grow flex flex-col gap-4">
+<SectionItem title="Entrepreneur" id="entrepreneurship">
+	<SectionColumnBody>
 		<EntrepreneurshipItem
 			role="Founder & CEO"
 			company="Sarcasm Studio"
@@ -21,5 +20,5 @@
 			period="2023 - Present"
 			onelineDescription="Leading a software studio being run ground up by engineers (frontend & backend) with over 5+ years of experience each"
 		/>
-	</div>
-</div>
+	</SectionColumnBody>
+</SectionItem>

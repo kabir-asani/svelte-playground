@@ -7,13 +7,13 @@
 	import Clickable from '$lib/components/shared/clickable/Clickable.svelte';
 </script>
 
-<Clickable href={url.valueOf()}>
-	<div class="flex flex-row gap-4 items-center">
-		<div class="flex flex-row gap-2 items-center">
-			<div>{text}</div>
-			<div class="text-neutral">{tag}</div>
-		</div>
-		<div class="grow border-b border-neutral opacity-20" />
-		<img src={image.valueOf()} alt="" class="h-6 w-6" />
+<div class="flex flex-row gap-4 items-center">
+	<div class="flex flex-col gap-2 items-start">
+		<Clickable href={url.valueOf()}>
+			<div class="text-primary">{text}</div>
+		</Clickable>
+		<div class="text-neutral">{tag}</div>
 	</div>
-</Clickable>
+	<div class="grow border-b border-neutral opacity-20" />
+	<img src={image.valueOf()} alt="" class="h-6 w-6" />
+</div>

@@ -1,8 +1,10 @@
-<div class="flex flex-col md:flex-row gap-4">
-	<div>
-		<p class="md:w-36 font-medium sticky top-10">About</p>
-	</div>
-	<div class="flex flex-col gap-4 text-neutral">
+<script>
+	import SectionItem from '$lib/components/shared/section/section-item/SectionItem.svelte';
+	import SectionColumnBody from '$lib/components/shared/section/section-body/SectionColumnBody.svelte';
+</script>
+
+<SectionItem title="About" id="about">
+	<SectionColumnBody properties="font-light">
 		<p>I'm Kabir Asani. I'm an entrepreneur, developer, content creator, and experimentalist.</p>
 
 		<p>
@@ -19,5 +21,5 @@
 			I'm now on my entrepreneurial journey, whilst creating content with an aim and intent to give
 			back to the society.
 		</p>
-	</div>
-</div>
+	</SectionColumnBody>
+</SectionItem>

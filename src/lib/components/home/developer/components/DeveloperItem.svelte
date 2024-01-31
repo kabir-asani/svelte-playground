@@ -10,7 +10,7 @@
 </script>
 
 <div
-	class="card shadow-2xl border border-neutral border-opacity-20 bg-base-100 md:sticky md:top-20"
+	class="card shadow-2xl border border-neutral border-opacity-20 bg-base-200 md:sticky md:top-10"
 >
 	<div class="card-body">
 		<div class="flex flex-col md:flex-row gap-2 items-start md:items-center">

@@ -9,7 +9,7 @@
 </script>
 
 <Clickable href={url}>
-	<div class="card shadow-2xl border border-neutral border-opacity-20 bg-base-100">
+	<div class="card shadow-2xl border border-neutral border-opacity-20 bg-base-200">
 		<div class="card-body">
 			<h1 class="card-title">{emoji}</h1>
 
