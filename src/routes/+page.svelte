@@ -11,12 +11,8 @@
 </script>
 
 <div class="flex flex-col gap-16">
-	<div class="mt-16">
-		<div class="mx-6 md:mx-12 lg:mx-auto lg:max-w-3xl">
-			<Header />
-		</div>
-	</div>
-	<div class="flex flex-col mx-6 md:mx-12 lg:mx-auto lg:max-w-3xl gap-16">
+	<div class="flex flex-col mx-6 md:mx-12 lg:mx-auto lg:max-w-3xl gap-16 m-16">
+		<Header />
 		<About />
 		<Showcase />
 		<Entrepreneurship />
