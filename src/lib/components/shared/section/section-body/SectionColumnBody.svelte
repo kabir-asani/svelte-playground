@@ -1,3 +1,3 @@
-<div class={'flex flex-col w-full gap-4' + ' ' + $$restProps.class || ''}>
+<div class={'grow flex flex-col gap-4' + ' ' + $$restProps.class || ''}>
 	<slot />
 </div>
